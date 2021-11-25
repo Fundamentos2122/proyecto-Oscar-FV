@@ -227,34 +227,32 @@
 
 .navbar{
     display: flex;
-    background-color: var(--color-light);
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--light-color);
+}
+
+.navbar-collapse{
+    display: none;
+}
+
+.navbar-toggle{
+    display: flex;
 }
 
 .navbar-brand{
     display: inline-block;
-    padding: 0.5em;
+    padding: 1em;
     text-decoration: none;
-    color: var(--color-dark);
+    color: var(--dark-color);
     font-weight: 600;
     font-size: 1.25em;
 }
 
-.navbar-toggle{
-    padding: 0.5em;
-    height: fit-content;
-}
-
 .navbar-nav{
-    display: block;
+    display: flex;
     margin: 0;
-    margin-top: 0.5em;
-    padding: 0.1em;
-    justify-content: flex-end;
+    padding: 1em;
 }
-
-
 
 .navbar-nav > .nav-item{
     list-style: none;
@@ -264,28 +262,12 @@
     display: block;
     padding: 0.5em 0.75em;
     text-decoration: none;
-    color: var(--color-dark);
+    color: var(--dark-color);
 }
 
 .nav-link:hover{
-    background-color: var(--color-light-darker);
-    /* color: var(--color-light); */
-}
-
-.nav-form{
-    display: block;
-    padding: 0.5em 0.75em;
-}
-
-.nav-img{
-    display: block;
-    padding: 0.5em 0.75em;
-    border-radius: 40px;
-    margin: 0;
-}
-
-.nav-img-style{
-    width: 6%;
+    background-color: var(--light-color-darker);
+    /* color: var(--light-color); */
 }
 
 
@@ -379,6 +361,10 @@
     }
     .navbar-nav{
         display: flex;
-        
     }
+
+    .navbar-collapse{
+        display: flex;
+    }
+
 }
